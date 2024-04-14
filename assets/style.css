@@ -418,7 +418,7 @@ body {
   width: auto;
   height: auto;
 }
-
+/* footer End*/
 /* product page */
 /* filter */
 .filter-wrapper {
@@ -475,7 +475,6 @@ body {
   color: rgb(240, 60, 57);
 }
 
-
 .filter-top ul li::after {
   content: "";
   width: 1px;
@@ -524,20 +523,136 @@ body {
   padding: 0.5rem;
 }
 
-.myproduct-wrapper .card-product-wrapper .card-product .card-product-body .card-rating {
+.myproduct-wrapper
+  .card-product-wrapper
+  .card-product
+  .card-product-body
+  .card-rating {
   color: #f77437;
 }
 
-.myproduct-wrapper .card-product-wrapper .card-product .card-product-body .product-name {
-width: 100%;
-overflow: hidden;
+.myproduct-wrapper
+  .card-product-wrapper
+  .card-product
+  .card-product-body
+  .product-name {
+  width: 100%;
+  overflow: hidden;
 }
 
-.myproduct-wrapper .card-product-wrapper .card-product .card-product-body .product-name h5 {
+.myproduct-wrapper
+  .card-product-wrapper
+  .card-product
+  .card-product-body
+  .product-name
+  h5 {
   white-space: nowrap;
   overflow: hidden;
   text-overflow: ellipsis;
 }
 /* product page End*/
 
-/* footer End*/
+/* Login Page */
+.login-wrapper {
+  border: 1px solid red;
+}
+
+.login-wrapper .cards {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.cards .login-card {
+  width: 100%;
+  height: auto;
+}
+
+.cards .login-card .login-title {
+  text-align: center;
+}
+
+.cards .login-card .login-title a {
+  display: inline-block;
+  overflow: hidden;
+  position: relative;
+  left: 0;
+  right: 0;
+  top: 0;
+  overflow: hidden;
+  width: 100px;
+}
+
+.cards .login-card .login-title img {
+  width: 100%;
+  height: auto;
+}
+
+.cards .form-login {
+  padding: 2rem;
+  height: auto;
+}
+
+.cards .form-login .email,
+.cards .form-login .password {
+  position: relative;
+  left: 0;
+  right: 0;
+  top: 0;
+  width: 100%;
+}
+
+.cards .form-login .password #toogle-password {
+  position: absolute;
+  top: 65%;
+  right: 0;
+  border: none;
+  background-color: rgba(255, 255, 255, 0.1);
+  color: #c25050;
+  width: 27px;
+  height: 25px;
+  overflow: hidden;
+  cursor: pointer;
+}
+
+.cards .form-login #login label {
+  text-transform: capitalize;
+  color: #c25050;
+  font-size: 14px;
+  font-weight: 600;
+  margin-bottom: 0.5rem;
+  display: block;
+}
+
+.cards .form-login .fa {
+  position: absolute;
+  top: 60%;
+  color: #c25050;
+}
+
+.cards .form-login .password #toogle-password .fa {
+  color: #c25050;
+  font-size: 17px;
+  display: block;
+  position: absolute;
+  top: 0;
+}
+
+.cards .form-login #login input {
+  display: block;
+  padding: 12px 25px;
+  margin-bottom: 30px;
+  width: 100%;
+  box-sizing: border-box;
+  background-color: #fff;
+  border: none;
+  border-bottom: 1px solid #ced4da;
+  outline: none;
+}
+
+.cards .form-login #login input:focus {
+  border-bottom: 1px solid #c25050;
+}
+
+/* Login Page End*/
