@@ -207,7 +207,7 @@ body {
   display: flex;
   justify-content: space-evenly;
   flex-wrap: wrap;
-  padding: 1rem;
+  padding: 3rem 1rem;
   gap: 1rem;
 }
 
@@ -239,6 +239,8 @@ body {
 /* banner end*/
 
 /* Product */
+/* customer Service */
+/* end customer Service */
 .product-wrapper {
   position: relative;
   top: 0;
@@ -247,11 +249,27 @@ body {
   overflow: hidden;
 }
 
+.customer-wrapper,
+.rnd-wrapper {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  /* border: 1px solid red; */
+}
+
 .product-wrapper .bg-product {
   width: 100%;
 }
 
-.product-wrapper .bg-product img {
+/* .customer-wrapper .bg-customer {
+  border: 1px solid red;
+  width: 100%;
+  height: auto;
+} */
+
+.product-wrapper .bg-product img,
+.customer-wrapper .bg-customer img,
+.rnd-wrapper .bg-rnd img {
   width: 100%;
   height: auto;
 }
@@ -265,10 +283,29 @@ body {
   bottom: 0;
 }
 
+.customer-wrapper .customer,
+.rnd-wrapper .rnd {
+  background-color: rgba(235, 235, 235, 0.8);
+}
+
 .product-wrapper .product h3 {
   font-weight: 100;
   font-size: 18px;
   color: rgb(207, 84, 79);
+}
+
+.customer-wrapper .customer h3,
+.rnd-wrapper .rnd h3 {
+  font-weight: 700;
+  font-size: 24px;
+  color: rgb(207, 84, 79);
+  text-align: center;
+}
+
+.customer-wrapper .customer p,
+.rnd-wrapper .rnd p {
+  text-align: center;
+  padding: 1rem 2rem;
 }
 
 .product-wrapper .product button {
@@ -306,7 +343,10 @@ body {
   left: 0;
   right: 0;
   padding: 0.5rem 1rem;
+  margin: 5px;
   gap: 10px;
+  background-color: rgba(225, 224, 224, 0.8);
+  margin: 0;
 }
 
 .footer-wrapper .footer-logo {
@@ -325,7 +365,6 @@ body {
 }
 
 .footer-wrapper .footer-account h3,
-.footer-wrapper .footer-choose h3,
 .footer-wrapper .footer-information h3,
 .footer-wrapper .credit-location h3 {
   color: #2e2e2e;
@@ -356,7 +395,6 @@ body {
   -o-transition: 0.3s;
 }
 
-.footer-wrapper .footer-choose P,
 .footer-wrapper .footer-information p,
 .footer-wrapper .credit-location p {
   color: rgba(34, 34, 34, 0.9);
@@ -365,6 +403,7 @@ body {
 .footer-wrapper .credit {
   color: rgba(34, 34, 34, 0.8);
   font-size: 14px;
+  padding: 2rem 0 0 0;
 }
 
 .footer-wrapper .credit-transaksi {
@@ -379,5 +418,126 @@ body {
   width: auto;
   height: auto;
 }
+
+/* product page */
+/* filter */
+.filter-wrapper {
+  margin-top: 3.8rem;
+  color: rgb(227, 19, 19);
+}
+
+.filter-wrapper h3 {
+  padding: 0 1rem;
+  cursor: pointer;
+  display: inline-block;
+}
+
+.filter-top {
+  /* border: 1px solid red; */
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
+  width: 100%;
+  position: relative;
+  top: 0;
+  left: 0;
+  right: 0;
+}
+
+.filter-top ul {
+  display: flex;
+  flex-wrap: nowrap;
+  justify-content: space-evenly;
+  width: 100%;
+
+  border-bottom: 1px solid #b1b1b1;
+}
+
+.filter-top ul li {
+  display: inline-block;
+  list-style: none;
+  text-align: center;
+  position: relative;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  width: 30%;
+  cursor: pointer;
+  padding: 10px 0;
+  /* border: 1px solid red; */
+}
+
+.filter-top ul .active {
+  border-bottom: 3px solid rgba(207, 84, 79, 0.8);
+}
+
+.filter-top ul li:hover {
+  color: rgb(240, 60, 57);
+}
+
+
+.filter-top ul li::after {
+  content: "";
+  width: 1px;
+  height: 50%;
+  background-color: #b1b1b1;
+  position: absolute;
+  top: 30%;
+  right: -0.5px;
+}
+
+/* filter end */
+
+.myproduct-wrapper {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  align-items: center;
+  width: 100%;
+  background-color: #e8e8e8;
+  cursor: pointer;
+}
+
+.myproduct-wrapper .card-product-wrapper {
+  width: 45%;
+  margin: 8px;
+  overflow: hidden;
+  border: 1px solid rgba(123, 123, 123, 0.8);
+}
+
+.myproduct-wrapper .card-product-wrapper .card-product {
+  overflow: hidden;
+}
+
+.myproduct-wrapper .card-product-wrapper .card-product .product-img {
+  width: 100%;
+  height: 9rem;
+  overflow: hidden;
+}
+
+.myproduct-wrapper .card-product-wrapper .card-product img {
+  width: 100%;
+  height: 100%;
+}
+
+.myproduct-wrapper .card-product-wrapper .card-product .card-product-body {
+  padding: 0.5rem;
+}
+
+.myproduct-wrapper .card-product-wrapper .card-product .card-product-body .card-rating {
+  color: #f77437;
+}
+
+.myproduct-wrapper .card-product-wrapper .card-product .card-product-body .product-name {
+width: 100%;
+overflow: hidden;
+}
+
+.myproduct-wrapper .card-product-wrapper .card-product .card-product-body .product-name h5 {
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+/* product page End*/
 
 /* footer End*/

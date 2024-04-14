@@ -10,51 +10,7 @@
     <title>KSA</title>
   </head>
   <body class="body">
-    <!-- Navbar -->
-    <nav class="navbar-wrapper">
-      <div class="navbar-top">
-        <div class="content-top">
-          <p>Welcome to PT. Kreasi Sentosa Abadi Store</p>
-        </div>
-        <div class="link-top">
-          <div class="icon-user">
-            <i class="fa fa-user"></i>
-            <i class="fa fa-chevron-down"></i>
-          </div>
-        </div>
-        <div class="link-user">
-          <a href="login.html">Login</a>
-          <a href="registered.html">Register</a>
-        </div>
-      </div>
-      <div class="navbar-bottom">
-        <div class="navbar-logo">
-          <a href="index.html">
-            <img src="./assets/ksa-logo.png" alt="" />
-          </a>
-        </div>
-        <div class="navbar-link">
-          <div class="closed">
-            <i class="fa-solid fa-x"></i>
-          </div>
-          <a href="index.html">HOME</a>
-          <a href="product.html"> PRODUCT </a>
-          <a href="galery.html">GALERY</a>
-          <a href="store.html">STORE</a>
-        </div>
-        <div class="navbar-extra">
-          <input type="hidden" id="input-search" />
-          <div class="search">
-            <i class="fa fa-magnifying-glass"></i>
-          </div>
-          <a href="card.html"><i class="fa fa-cart-shopping"></i></a>
-          <div id="menu">
-            <li class="fa fa-bars"></li>
-          </div>
-        </div>
-      </div>
-    </nav>
-    <!-- Navbar End -->
+    <div id="navbar-container"></div>
 
     <!-- hero -->
     <div class="hero-wrapper">
@@ -73,6 +29,14 @@
       <button class="next"><i class="fa-solid fa-chevron-right"></i></button>
     </div>
     <!-- hero end -->
+
+    <!-- coba Route-->
+    <div id="app">
+      <div id="content">
+        <!-- Content will be dynamically replaced here -->
+      </div>
+    </div>
+    <!-- coba Route-->
 
     <!-- Banner -->
     <div class="banner-wrapper">
@@ -95,10 +59,47 @@
       </div>
       <div class="product">
         <h3>PRODUCTS</h3>
-        <button>Search By Product Category</button>
+        <button id="product">Search By Product Category</button>
       </div>
     </div>
     <!-- Product End -->
+
+    <!-- RESEARCH AND DEVELOPMENT -->
+    <div class="rnd-wrapper">
+      <div class="rnd">
+        <h3>RESEARCH AND DEVELOPMENT</h3>
+        <p>
+          Creative thinking, investing, seeking new technologies to develop new
+          products, achieving superior quality: with the dogged commitment,
+          expertise and keen eye of our R&D team, working closely with our
+          suppliers, the most accredited research institutes and leading
+          manufacturers of application systems, innovation at Sayerlack is
+          ongoing.
+        </p>
+      </div>
+      <div class="bg-rnd">
+        <img src="./assets/img/RnD.jpg" alt="" />
+      </div>
+    </div>
+    <!-- END RESEARCH AND DEVELOPMENT -->
+
+    <!-- customer Support -->
+    <div class="customer-wrapper">
+      <div class="customer">
+        <h3>CUSTOMER SUPPORT</h3>
+        <p>
+          Customer support plays an essential role in the organization of the
+          Sayerlack sales process. The department provides customers with
+          assistance and support before, during and after purchasing a product
+          through activities devised to meet their expectations and boost
+          customer satisfaction
+        </p>
+      </div>
+      <div class="bg-customer">
+        <img src="./assets/img/customer-service.jpg" alt="" />
+      </div>
+    </div>
+    <!-- End customer Support -->
 
     <!-- Footer -->
     <footer class="footer-wrapper">
@@ -109,17 +110,7 @@
         <h3>My Account</h3>
         <a href="">Login</a>
       </div>
-      <div class="footer-choose">
-        <h3>RESEARCH AND DEVELOPMENT</h3>
-        <p>
-          Customer support plays an essential role in the organization of the
-          Sayerlack sales process. The department provides customers with
-          assistance and support before, during and after purchasing a product
-          through activities devised to meet their expectations and boost
-          customer satisfaction
-        </p>
-      </div>
-      <div class="footer-information">
+      <!-- <div class="footer-information">
         <h3>CUSTOMER SUPPORT</h3>
         <p>
           Customer support plays an essential role in the organization of the
@@ -132,11 +123,8 @@
         <p>
           Email Us: marketing@bocorocco-italia.com info@bocorocco-online.com
         </p>
-      </div>
+      </div> -->
 
-      <div class="credit">
-        <p>&copy; 2023 Kreasi Sentosa Abadi</p>
-      </div>
       <div class="credit-location">
         <h3>PT. Kreasi Sentosa Abadi</h3>
         <p>
@@ -202,8 +190,12 @@
           src="assets/images/transaksi-img/logo-indomaret.png"
           alt="assets/images/transaksi-img/logo-indomaret.png" />
       </div>
+      <div class="credit">  
+        <p>&copy; 2023 Kreasi Sentosa Abadi</p>
+      </div>
     </footer>
     <!-- Footer End-->
   </body>
+  <script src="./assets/script/navbar.js"></script>
   <script src="./assets/script/script.js"></script>
-</html>
+  </html>
