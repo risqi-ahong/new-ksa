@@ -553,27 +553,67 @@ body {
 /* product page End*/
 
 /* Login Page */
-.login-wrapper {
-  border: 1px solid red;
+/* Register Page */
+
+.home {
+  position: absolute;
+  top: 5px;
+  left: 5px;
 }
 
-.login-wrapper .cards {
+.home .fa {
+  color: #c25050;
+}
+
+.home .fa:hover {
+  color: #cd8282;
+}
+
+.login-wrapper .cards,
+.registration-wrapper .cards {
   display: flex;
   flex-direction: column;
   justify-content: center;
   align-items: center;
 }
 
-.cards .login-card {
+.cards .login-card,
+.cards .register-card,
+.cards .registration-card {
   width: 100%;
   height: auto;
+  position: relative;
+  top: 0;
+  left: 0;
+  right: 0;
+  width: 100%;
 }
 
-.cards .login-card .login-title {
+.cards .login-card::after,
+.cards .registration-card::after {
+  content: "";
+  width: 100%;
+  height: 2px;
+  position: absolute;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  border-bottom: 1px dashed #c25050;
+}
+
+.cards .login-card .login-title,
+.cards .register-card .register-title,
+.cards .registration-card .registration-title {
   text-align: center;
+  color: #c25050;
 }
 
-.cards .login-card .login-title a {
+.cards .register-card .register-title {
+  margin-top: 1rem;
+}
+
+.cards .login-card .login-title a,
+.cards .registration-card .registration-title a {
   display: inline-block;
   overflow: hidden;
   position: relative;
@@ -584,18 +624,33 @@ body {
   width: 100px;
 }
 
-.cards .login-card .login-title img {
+.cards .login-card .login-title img,
+.cards .registration-card .registration-title img {
   width: 100%;
   height: auto;
 }
 
-.cards .form-login {
+.cards .form-login,
+.cards .form-registration {
   padding: 2rem;
   height: auto;
 }
 
+.cards .form-register {
+  padding: 1rem 2rem;
+}
+
+.cards .form-register p {
+  color: #333;
+  margin-bottom: 1.5rem;
+}
+
 .cards .form-login .email,
-.cards .form-login .password {
+.cards .form-login .password,
+.cards .form-registration .email,
+.cards .form-registration .username,
+.cards .form-registration .phone,
+.cards .form-registration .password {
   position: relative;
   left: 0;
   right: 0;
@@ -603,20 +658,23 @@ body {
   width: 100%;
 }
 
-.cards .form-login .password #toogle-password {
+.cards .form-login .password #toogle-password,
+.cards .form-registration .password #toogle-password1,
+.cards .form-registration .password #toogle-password2 {
   position: absolute;
   top: 65%;
   right: 0;
   border: none;
   background-color: rgba(255, 255, 255, 0.1);
   color: #c25050;
-  width: 27px;
+  width: 25px;
   height: 25px;
   overflow: hidden;
   cursor: pointer;
 }
 
-.cards .form-login #login label {
+.cards .form-login #login label,
+.cards .form-registration #registration label {
   text-transform: capitalize;
   color: #c25050;
   font-size: 14px;
@@ -625,21 +683,25 @@ body {
   display: block;
 }
 
-.cards .form-login .fa {
+.cards .form-login .fa,
+.cards .form-registration .fa {
   position: absolute;
   top: 60%;
   color: #c25050;
 }
 
-.cards .form-login .password #toogle-password .fa {
+.cards .form-login .password #toogle-password .fa,
+.cards .form-registration .password #toogle-password1 .fa,
+.cards .form-registration .password #toogle-password2 .fa {
   color: #c25050;
-  font-size: 17px;
+  font-size: 14px;
   display: block;
   position: absolute;
   top: 0;
 }
 
-.cards .form-login #login input {
+.cards .form-login #login input,
+.cards .form-registration #registration input {
   display: block;
   padding: 12px 25px;
   margin-bottom: 30px;
@@ -651,8 +713,51 @@ body {
   outline: none;
 }
 
-.cards .form-login #login input:focus {
+.cards .form-login #login input:focus,
+.cards .form-registration #registration input:focus {
   border-bottom: 1px solid #c25050;
 }
 
+.btn-login,
+.btn-register,
+.btn-registration {
+  display: block;
+  width: 100%;
+  height: 2rem;
+  background-color: #c25050;
+  color: #fff;
+  border: none;
+  cursor: pointer;
+  font-size: 14px;
+  font-weight: 500;
+  border-radius: 5px;
+  -webkit-border-radius: 5px;
+  -moz-border-radius: 5px;
+  -ms-border-radius: 5px;
+  -o-border-radius: 5px;
+}
+
+.btn-login:hover,
+.btn-register:hover,
+.btn-registration:hover {
+  background-color: #c04242;
+}
+
+.btn-register {
+  margin-top: 1rem;
+}
+
+.forgot {
+  text-decoration: none;
+  margin-top: 0.5rem;
+  display: block;
+  color: #c25050;
+  font-size: 14px;
+}
+
+.forgot:hover {
+  color: #cd8282;
+}
+
 /* Login Page End*/
+/* Register Page End*/

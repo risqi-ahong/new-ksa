@@ -15,4 +15,10 @@ document.addEventListener("DOMContentLoaded", () => {
       eye.classList.add("fa", "fa-eye-slash");
     }
   });
+
+  const btnRegister = document.querySelector(".btn-register");
+
+  btnRegister.addEventListener("click", () => {
+    window.location.href = "register.html";
+  });
 });

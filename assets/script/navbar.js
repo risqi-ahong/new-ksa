@@ -11,7 +11,7 @@ const navbarHtml = `<nav class="navbar-wrapper">
   </div>
   <div class="link-user">
     <a href="login.html">Login</a>
-    <a href="registered.html">Register</a>
+    <a href="register.html">Register</a>
   </div>
 </div>
 <div class="navbar-bottom">
