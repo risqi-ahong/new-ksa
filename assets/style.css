@@ -761,3 +761,40 @@ body {
 
 /* Login Page End*/
 /* Register Page End*/
+
+/* Galery */
+.galery-wrapper {
+  display: flex;
+  justify-content: center;
+  width: 100%;
+  min-height: 15rem;
+  position: relative;
+  top: 0;
+  left: 0;
+  right: 0;
+  margin-top: 3.7rem; 
+  text-align: center;
+  background-color: #a19e9e;
+}
+
+.galery-wrapper img {
+  width: 100%;
+  height: auto;
+}
+
+.galery-wrapper .card-desain {
+  position: absolute;
+  bottom: -3rem;
+  background-color: #ffffff;
+  margin: 1rem;
+  border: 1px solid #eaeaea;
+}
+
+.galery-wrapper .card-desain a {
+  text-decoration: none;
+}
+
+.galery-wrapper .card-desain a:hover {
+  color: #3267d3;
+}
+/* Galery End*/
