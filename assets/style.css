@@ -764,37 +764,329 @@ body {
 
 /* Galery */
 .galery-wrapper {
+  margin-top: 3.7rem;
+  background-color: rgba(225, 224, 224, 0.8);
+}
+
+.galery-top {
   display: flex;
   justify-content: center;
   width: 100%;
+  height: auto;
   min-height: 15rem;
   position: relative;
   top: 0;
   left: 0;
   right: 0;
-  margin-top: 3.7rem; 
   text-align: center;
   background-color: #a19e9e;
 }
 
-.galery-wrapper img {
+.galery-top img {
   width: 100%;
   height: auto;
 }
 
-.galery-wrapper .card-desain {
+.galery-top .card-desain {
   position: absolute;
-  bottom: -3rem;
+  bottom: -5rem;
   background-color: #ffffff;
   margin: 1rem;
   border: 1px solid #eaeaea;
 }
 
-.galery-wrapper .card-desain a {
-  text-decoration: none;
+.galery-top .card-desain p {
+  padding: 0.5rem 0;
 }
 
-.galery-wrapper .card-desain a:hover {
+.galery-top .card-desain a {
+  display: inline-block;
+  text-decoration: none;
   color: #3267d3;
+  padding: 10px;
+}
+
+.galery-top .card-desain a:hover {
+  color: #c04242;
+}
+
+.galery-wrapper .galery-description {
+  padding: 4rem 1rem 0 1rem;
+  text-align: justify;
+  line-height: 150%;
+}
+
+.galery-wrapper .galery-description p {
+  padding: 1rem 0;
 }
 /* Galery End*/
+
+/* my bag */
+.myBag-title {
+  border-bottom: 1px solid rgba(207, 84, 79, 0.5);
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  display: flex;
+  padding: 10px 5px;
+  gap: 20px;
+  z-index: 1;
+  background-color: rgba(243, 241, 241, 0.8);
+}
+
+.myBag-title a {
+  padding-top: 2px;
+}
+
+.myBag-title .fa {
+  text-align: center;
+  color: #c25050;
+}
+
+.myBag-title .fa:hover {
+  color: #cd8282;
+}
+
+.myBag-title h3 {
+  color: #c25050;
+}
+
+.myBag-title h3 span {
+  color: #c76363;
+}
+
+.myBag-wrapper {
+  display: flex;
+  position: relative;
+  top: 0;
+  left: 0;
+  margin-top: 0.7rem;
+  height: 100%;
+  flex-direction: column;
+  background-color: rgba(225, 224, 224, 0.8);
+  overflow: hidden;
+  gap: 10px;
+}
+
+.myBag-wrapper .myBag-wrapper-product {
+  display: flex;
+  flex-direction: column;
+  border: 1px solid rgba(123, 123, 123, 0.8);
+  position: relative;
+  top: 0;
+  right: 0;
+  left: 0;
+  transition: 0.5s;
+  -webkit-transition: 0.5s;
+  -moz-transition: 0.5s;
+  -ms-transition: 0.5s;
+  -o-transition: 0.5s;
+}
+
+.myBag-wrapper .myBag-wrapper-product.active {
+  left: -15%;
+  transition: 0.5s;
+  -webkit-transition: 0.5s;
+  -moz-transition: 0.5s;
+  -ms-transition: 0.5s;
+  -o-transition: 0.5s;
+}
+
+.myBag-wrapper .myBag-wrapper-product .bag-card-top {
+  background-color: rgba(247, 247, 247, 0.8);
+  border-bottom: 1px solid rgba(123, 123, 123, 0.8);
+  display: flex;
+  justify-content: space-between;
+  padding: 0.5rem;
+}
+
+.myBag-wrapper .myBag-wrapper-product .bag-card-top .brand {
+  color: #c04242;
+  font-weight: 700;
+}
+
+.myBag-wrapper .myBag-wrapper-product .bag-card-top .trash {
+  border: none;
+  color: rgba(54, 54, 54, 0.8);
+}
+
+.myBag-wrapper .myBag-wrapper-product .bag-card-top .trash:hover {
+  color: rgba(54, 54, 54, 0.5);
+}
+
+.myBag-wrapper .bag-card-wrapper {
+  display: flex;
+  align-items: center;
+  background-color: rgba(247, 247, 247, 0.8);
+  gap: 15px;
+  padding: 0.5rem;
+}
+
+.myBag-wrapper .bag-card-wrapper .check {
+  display: flex;
+  align-items: center;
+  margin-left: 5px;
+}
+
+.myBag-wrapper .bag-card-wrapper .check input[type="checkbox"] {
+  transform: scale(1.5);
+  appearance: none;
+  border: 1px solid rgba(123, 123, 123, 0.8);
+  width: 10px;
+  height: 10px;
+}
+
+.myBag-wrapper .bag-card-wrapper .check input[type="checkbox"]:checked {
+  content: "";
+  background-color: #c04242;
+}
+
+.myBag-wrapper .bag-card-wrapper .check input[type="checkbox"]:checked::after {
+  content: "\2713";
+  position: absolute;
+  top: -5px;
+  color: #fff;
+  width: 100%;
+  height: 100%;
+}
+
+.myBag-wrapper .bag-card-wrapper .product-img {
+  width: 40%;
+  height: 70px;
+}
+
+.myBag-wrapper .bag-card-wrapper img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.myBag-wrapper .bag-card-wrapper .detail-product {
+  display: flex;
+  flex-direction: column;
+  width: 70%;
+  overflow: hidden;
+  gap: 5px;
+}
+
+.myBag-wrapper .bag-card-wrapper .detail-product .name-product p {
+  text-wrap: nowrap;
+  text-overflow: ellipsis;
+  overflow: hidden;
+  max-width: 200px;
+  font-size: 18px;
+}
+
+.myBag-wrapper .bag-card-wrapper .detail-product .type-product {
+  font-size: 14px;
+  color: #6f6e6e;
+}
+
+.myBag-wrapper .bag-card-wrapper .detail-product .type-product p {
+  border: 1px solid #6f6e6e;
+  padding: 3px;
+  display: inline-block;
+}
+
+.myBag-wrapper .bag-card-wrapper .detail-product .price-product {
+  font-size: 16px;
+  font-weight: 700;
+  color: #c04242;
+}
+
+.myBag-wrapper .bag-card-wrapper .detail-product .qty {
+  display: flex;
+}
+
+.myBag-wrapper .bag-card-wrapper .detail-product .qty button,
+.myBag-wrapper .bag-card-wrapper .detail-product .qty input {
+  background-color: #fff;
+  border: 1px solid rgba(123, 123, 123, 0.8);
+  padding: 2px;
+}
+
+.myBag-wrapper .bag-card-wrapper .detail-product .qty input {
+  outline: none;
+  width: 30px;
+  text-align: center;
+}
+
+.myBag-wrapper .bag-card-wrapper .edit {
+  /* width: auto; */
+  height: 100%;
+  position: absolute;
+  top: 0;
+  right: -55px;
+}
+
+.myBag-wrapper .bag-card-wrapper .edit button {
+  height: 100%;
+  width: auto;
+  padding: 0 10px;
+  background-color: #c04242;
+  color: #fff;
+  border: none;
+}
+
+.myBag-checkout {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-wrap: nowrap;
+  height: 3rem;
+  position: fixed;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  border: 1px solid #c04242;
+}
+
+.myBag-checkout input {
+  margin-left: 1rem;
+}
+
+.myBag-checkout input[type="checkbox"] {
+  transform: scale(1.5);
+  appearance: none;
+  /* -webkit-appearance: none; */
+  /* -moz-appearance: none; */
+  border: 1px solid rgba(123, 123, 123, 0.8);
+  width: 10px;
+  height: 10px;
+}
+
+.myBag-checkout input[type="checkbox"]:checked {
+  content: "";
+  background-color: #c04242;
+}
+
+.myBag-checkout input[type="checkbox"]:checked::after {
+  content: "\2713";
+  position: absolute;
+  top: -5px;
+  color: #fff;
+  width: 100%;
+  height: 100%;
+}
+
+.myBag-checkout .price {
+  color: rgba(49, 49, 49, 0.8);
+}
+
+.myBag-checkout .price span {
+  color: #c04242;
+  font-weight: 800;
+}
+
+.myBag-checkout .btn-checkout {
+  height: 100%;
+  padding: 10px;
+  border: none;
+  background-color: #c04242;
+  color: #fff;
+  font-weight: 700;
+  cursor: pointer;
+}
+
+/* my bag end */

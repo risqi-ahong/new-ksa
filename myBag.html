@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="./assets/style.css" />
+    <link
+      rel="stylesheet"
+      href="./assets/fontawesome-free-6.5.1-web/css/all.min.css" />
+    <title>My Bag</title>
+  </head>
+    <div class="myBag-title">
+      <a href="./index.html">
+        <i class="fa fa-arrow-left"></i>
+      </a>
+      <h3>My Bag <span> (5) </span></h3>
+    </div>
+    <div class="myBag-wrapper">
+      <div class="myBag-wrapper-product">
+        <div class="bag-card-top">
+          <p class="brand">Sayerlack</p>
+          <button class="trash"><i class="fa fa-trash"></i></button>
+        </div>
+        <div class="bag-card-wrapper">
+          <div class="check">
+            <input type="checkbox" />
+          </div>
+          <div class="product-img">
+            <img src="./assets/img/sayerlack/1.jpg" alt="" />
+          </div>
+          <div class="detail-product">
+            <div class="name-product">
+              <p>AM0623/NN</p>
+            </div>
+            <div class="type-product">
+              <p>Sayerlack</p>
+            </div>
+            <div class="price-product">
+              <p>Rp1000.000</p>
+            </div>
+            <div class="qty">
+              <button class="btn-minus"><i class="fa fa-minus"></i></button>
+              <input type="text" class="input-qty" />
+              <button class="btn-plus"><i class="fa fa-plus"></i></button>
+            </div>
+          </div>
+          <div class="edit">
+            <button>Hapus</button>
+          </div>
+        </div>
+      </div>
+      <div class="myBag-wrapper-product">
+        <div class="bag-card-top">
+          <p class="brand">Sherwin</p>
+          <button class="trash"><i class="fa fa-trash"></i></button>
+        </div>
+        <div class="bag-card-wrapper">
+          <div class="check">
+            <input type="checkbox" />
+          </div>
+          <div class="product-img">
+            <img src="./assets/img/sherwin/sherwin.jpeg" alt="" />
+          </div>
+          <div class="detail-product">
+            <div class="name-product">
+              <p>538:008:10000 White Pasta Acrilic</p>
+            </div>
+            <div class="type-product">
+              <p>Sherwin</p>
+            </div>
+            <div class="price-product">
+              <p>Rp1.000.000</p>
+            </div>
+            <div class="qty">
+              <button class="btn-minus"><i class="fa fa-minus"></i></button>
+              <input type="text" />
+              <button class="btn-plus"><i class="fa fa-plus"></i></button>
+            </div>
+          </div>
+          <div class="edit">
+            <button>Hapus</button>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="myBag-checkout">
+      <input type="checkbox" name="checkAll" />
+      <p class="price">Total <span>Rp1.000.000</span></p>
+      <button class="btn-checkout">Checkout(0)</button>
+    </div>
+  </body>
+  <script src="./assets/script/bag.js"></script>
+</html>
