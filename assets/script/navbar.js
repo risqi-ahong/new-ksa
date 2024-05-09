@@ -34,7 +34,7 @@ const navbarHtml = `<nav class="navbar-wrapper">
     <div class="search">
       <i class="fa fa-magnifying-glass"></i>
     </div>
-    <a href="card.html">
+    <a href="myBag.html">
       <i class="fa fa-cart-shopping"></i>
     </a>
     <div id="menu">
