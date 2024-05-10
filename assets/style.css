@@ -78,8 +78,8 @@ body {
   top: 0;
   left: 0;
   right: 0;
-  border-bottom: 1px solid rgba(222, 206, 204, 0.5);
-  background-color: rgba(244, 237, 235, 0.5);
+  /* border-bottom: 1px solid rgba(222, 206, 204, 0.5); */
+  /* background-color: rgba(248, 248, 248, 0.5); */
 }
 .navbar-bottom .navbar-logo {
   position: relative;
@@ -768,7 +768,7 @@ body {
 
 /* Galery */
 .galery-wrapper {
-  margin-top: 3.7rem;
+  /* margin-top: 3.7rem; */
   background-color: rgba(225, 224, 224, 0.8);
 }
 

@@ -90,3 +90,16 @@ menu.onclick = () => {
 closeMenu.onclick = () => {
   navbarLink.style.right = "-100%";
 };
+
+const navbarBottom = document.querySelector(".navbar-bottom");
+
+window.addEventListener("scroll", function () {
+  var scrollY = window.scrollY;
+  if (scrollY > 100) {
+    navbarBottom.style.backgroundColor = "rgba(255, 255, 255, 0.5)";
+    navbarBottom.style.bordedrBottom = "1px solid rgba(222, 206, 204, 0.5)";
+  } else {
+    navbarBottom.style.backgroundColor = "rgba(255, 255, 255, 0.1)";
+    navbarBottom.style.bordedrBottom = "1px solid rgba(222, 206, 204, 0.1)";
+  }
+});

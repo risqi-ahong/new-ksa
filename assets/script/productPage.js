@@ -21,3 +21,5 @@ document.addEventListener("DOMContentLoaded", () => {
     track.style.transform = `translateX(-${i * itemWidth}px)`;
   });
 });
+
+
