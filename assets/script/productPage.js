@@ -1,5 +1,9 @@
 const body = document.querySelector("body");
 
+// const item = document.querySelectorAll(".product-page-item");
+
+const totalContent = document.querySelector(".total-content-img");
+
 document.addEventListener("DOMContentLoaded", () => {
   const prevBtn = document.querySelector(".prev");
   const nextBtn = document.querySelector(".next");
@@ -7,7 +11,11 @@ document.addEventListener("DOMContentLoaded", () => {
   const track = document.querySelector(".product-page-track");
   const items = document.querySelectorAll(".product-page-item");
 
+  const totalContent = document.querySelector(".total-content-img");
+
   let i = 0;
+
+  totalContent.innerHTML = `1 / ${items.length}`;
 
   const itemWidth = items[0].offsetWidth;
 
@@ -21,5 +29,3 @@ document.addEventListener("DOMContentLoaded", () => {
     track.style.transform = `translateX(-${i * itemWidth}px)`;
   });
 });
-
-
