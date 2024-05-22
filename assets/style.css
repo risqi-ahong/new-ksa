@@ -6,7 +6,7 @@
 body {
   background-color: rgba(225, 224, 224, 0.8);
   padding-top: 2rem;
-  height: 1000px;
+  /* height: 1000px; */
 }
 
 .navbar-wrapper {
@@ -1112,7 +1112,12 @@ body {
 
 /* Product Page */
 .detail-Page-product-wrapper {
+  background-color: rgba(123, 123, 123, 0.8);
+}
+
+.detail-Page-product-wrapper .product-page-top {
   padding: 0.5rem;
+  background-color: #fff;
 }
 
 .detail-Page-product-wrapper .product-page-price {
@@ -1124,7 +1129,7 @@ body {
 
 .detail-Page-product-wrapper .product-page-name {
   font-size: 18px;
-  font-weight: 800;
+  font-weight: 300;
   margin-bottom: 10px;
 }
 
@@ -1157,6 +1162,159 @@ body {
 .detail-Page-product-wrapper .product-page-sale p {
   color: rgba(31, 30, 30, 0.8);
   padding: 0 5px;
+}
+
+.detail-Page-product-wrapper .product-page-detail,
+.detail-Page-product-wrapper .product-page-evaluation {
+  background-color: #fff;
+  margin: 10px 0;
+}
+
+.detail-Page-product-wrapper .product-page-detail .spesifikasi {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 10px;
+  border-bottom: 1px solid rgba(123, 123, 123, 0.3);
+  position: relative;
+  top: 0;
+  left: 0;
+  right: 0;
+}
+
+.detail-Page-product-wrapper
+  .product-page-detail
+  .spesifikasi
+  .link-spesifikasi
+  p {
+  width: 100px;
+  position: absolute;
+  right: 17px;
+  top: 0;
+  bottom: 0;
+  white-space: nowrap;
+  display: inline-block;
+  text-overflow: ellipsis;
+  overflow: hidden;
+  line-height: 50px;
+  font-weight: 100;
+  cursor: pointer;
+}
+
+.detail-Page-product-wrapper
+  .product-page-detail
+  .spesifikasi
+  .link-spesifikasi
+  .fa {
+  margin-top: 7px;
+  font-size: 20px;
+  color: rgba(123, 123, 123, 0.8);
+  cursor: pointer;
+}
+
+.detail-Page-product-wrapper
+  .product-page-detail
+  .spesifikasi
+  .spesifikasi-product {
+  display: flex;
+  align-items: center;
+  position: fixed;
+  left: 0;
+  right: 0;
+  bottom: -100%;
+  background-color: #fff;
+  padding: 2rem;
+  gap: 20%;
+  height: 0;
+  transition: 0.5s;
+  -webkit-transition: 0.5s;
+  -moz-transition: 0.5s;
+  -ms-transition: 0.5s;
+  -o-transition: 0.5s;
+}
+
+.detail-Page-product-wrapper
+  .product-page-detail
+  .spesifikasi
+  .spesifikasi-product.active {
+  display: flex;
+  align-items: center;
+  position: fixed;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  background-color: #fff;
+  padding: 2rem;
+  gap: 20%;
+  height: 10%;
+  transition: 0.5s;
+  -webkit-transition: 0.5s;
+  -moz-transition: 0.5s;
+  -ms-transition: 0.5s;
+  -o-transition: 0.5s;
+}
+
+.detail-Page-product-wrapper
+  .product-page-detail
+  .spesifikasi
+  .spesifikasi-product.active
+  li,
+.detail-Page-product-wrapper
+  .product-page-detail
+  .spesifikasi
+  .spesifikasi-product
+  li {
+  list-style: none;
+  padding: 0.5rem;
+  color: rgba(20, 20, 20, 0.8);
+}
+
+.product-page-detail .deskripsi {
+  padding: 0.5rem;
+  /* max-height: 12rem; */
+  overflow: hidden;
+  position: relative;
+  bottom: 0;
+  left: 0;
+  right: 0;
+}
+
+/* .product-page-detail .deskripsi.active {
+  height: auto;
+} */
+
+.product-page-detail .deskripsi h3 {
+  margin-bottom: 1rem;
+}
+
+.product-page-detail .deskripsi p {
+  color: rgba(0, 0, 0, 0.7);
+  line-height: 1.5rem;
+  padding: 0 0 5rem 0;
+}
+
+.product-page-detail .deskripsi .read {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  padding: 1rem;
+  border-top: 1px solid rgba(123, 123, 123, 0.3);
+  text-align: center;
+  background-color: #fff;
+}
+
+.product-page-detail .deskripsi .read .btn-read {
+  border: none;
+  background-color: #fff;
+  cursor: pointer;
+  font-size: 16px;
+  text-transform: capitalize;
+  color: rgba(207, 84, 79, 1);
+}
+
+.product-page-detail .deskripsi .read .btn-read:hover {
+  color: rgba(207, 84, 79, 0.8);
 }
 
 /* Product Page End*/
