@@ -183,7 +183,6 @@ body {
 .product-page-img .product-page-track .product-page-item img {
   width: 100%;
   height: 100%;
-  object-fit: cover;
 }
 
 .prev,
@@ -1145,7 +1144,12 @@ body {
   display: flex;
 }
 
-.detail-Page-product-wrapper .product-page-rating .fa {
+.detail-Page-product-wrapper .product-page-rating .fa,
+.detail-Page-product-wrapper
+  .product-page-evaluation
+  .evaluation-ratting
+  .ratting
+  .fa {
   color: rgba(248, 212, 8, 0.8);
   font-size: 14px;
 }
@@ -1170,7 +1174,8 @@ body {
   margin: 10px 0;
 }
 
-.detail-Page-product-wrapper .product-page-detail .spesifikasi {
+.detail-Page-product-wrapper .product-page-detail .spesifikasi,
+.detail-Page-product-wrapper .product-page-evaluation .evaluation-ratting {
   display: flex;
   justify-content: space-between;
   align-items: center;
@@ -1205,7 +1210,8 @@ body {
   .product-page-detail
   .spesifikasi
   .link-spesifikasi
-  .fa {
+  .fa,
+.detail-Page-product-wrapper .product-page-evaluation .evaluation-ratting .fa {
   margin-top: 7px;
   font-size: 20px;
   color: rgba(123, 123, 123, 0.8);
@@ -1271,17 +1277,12 @@ body {
 
 .product-page-detail .deskripsi {
   padding: 0.5rem;
-  /* max-height: 12rem; */
   overflow: hidden;
   position: relative;
   bottom: 0;
   left: 0;
   right: 0;
 }
-
-/* .product-page-detail .deskripsi.active {
-  height: auto;
-} */
 
 .product-page-detail .deskripsi h3 {
   margin-bottom: 1rem;
@@ -1313,8 +1314,174 @@ body {
   color: rgba(207, 84, 79, 1);
 }
 
+.product-page-detail .deskripsi .read .btn-read span {
+  padding-left: 5px;
+}
+
 .product-page-detail .deskripsi .read .btn-read:hover {
   color: rgba(207, 84, 79, 0.8);
+}
+
+.detail-Page-product-wrapper .product-page-evaluation .evaluation-ratting p {
+  display: flex;
+  align-items: center;
+  gap: 5px;
+  text-transform: capitalize;
+  font-size: 12px;
+}
+
+.detail-Page-product-wrapper .product-page-evaluation .evaluation-ratting .fa {
+  margin: 0;
+}
+
+.detail-Page-product-wrapper
+  .product-page-evaluation
+  .evaluation-comment
+  .users-comment {
+  border-bottom: 1px solid rgba(123, 123, 123, 0.3);
+}
+
+.detail-Page-product-wrapper
+  .product-page-evaluation
+  .evaluation-comment
+  .users-comment
+  .users {
+  display: flex;
+  padding: 5px;
+  gap: 5px;
+}
+
+.detail-Page-product-wrapper
+  .product-page-evaluation
+  .evaluation-comment
+  .users-comment
+  .users
+  .img-users {
+  width: 3rem;
+  height: 2.5rem;
+  border-radius: 100%;
+  position: relative;
+  top: 0;
+  left: 0;
+  right: 0;
+  overflow: hidden;
+}
+
+.detail-Page-product-wrapper
+  .product-page-evaluation
+  .evaluation-comment
+  .users-comment
+  .users
+  .img-users
+  img {
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.detail-Page-product-wrapper
+  .product-page-evaluation
+  .evaluation-comment
+  .users-comment
+  .users
+  .comment {
+  position: relative;
+  top: 0;
+  left: 0;
+  right: 0;
+  width: 100%;
+}
+
+.detail-Page-product-wrapper
+  .product-page-evaluation
+  .evaluation-comment
+  .users-comment
+  .users
+  .comment
+  .name-users {
+  font-size: 12px;
+}
+
+.detail-Page-product-wrapper
+  .product-page-evaluation
+  .evaluation-comment
+  .users-comment
+  .users
+  .comment
+  .ratting-users {
+  font-size: 10px;
+  color: rgba(248, 212, 8, 0.8);
+  padding: 5px 0;
+}
+
+.detail-Page-product-wrapper
+  .product-page-evaluation
+  .evaluation-comment
+  .users-comment
+  .users
+  .comment
+  .fill-comment {
+  padding: 5px 0;
+  font-size: 14px;
+}
+
+.detail-Page-product-wrapper
+  .product-page-evaluation
+  .evaluation-comment
+  .users-comment
+  .users
+  .comment
+  .img-upload {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-wrap: nowrap;
+  padding: 5px 0;
+  width: 100%;
+  position: relative;
+  left: 0;
+  right: 0;
+  top: 0;
+  overflow: hidden;
+}
+
+.detail-Page-product-wrapper
+  .product-page-evaluation
+  .evaluation-comment
+  .users-comment
+  .users
+  .comment
+  .img-upload
+  .img {
+  position: relative;
+  top: 0;
+  left: 0;
+  right: 0;
+  width: 5.8rem;
+  height: 5.8rem;
+  overflow: hidden;
+}
+
+.detail-Page-product-wrapper
+  .product-page-evaluation
+  .evaluation-comment
+  .users-comment
+  .users
+  .comment
+  .img-upload
+  .img
+  img {
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
 }
 
 /* Product Page End*/

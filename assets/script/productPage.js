@@ -17,22 +17,29 @@ if (deskripsi.clientHeight < 208) {
   btnRead.style.display = "none";
   read.style.border = "none";
 } else {
-  console.log(btnIcon.classList.add("fa fa-chevron-down"));
-  console.log(btnIcon);
+  btnIcon.classList.add("fa-chevron-down");
   btnRead.style.display = "inline-block";
   deskripsi.style.height = "12rem";
-  document.addEventListener("click", (e) => {
-    if (btnRead.contains(e.target)) {
-      if (deskripsi.clientHeight <= 208) {
-        deskripsi.style.height = "auto";
-        btnRead.innerHTML = "Hide";
-      } else {
-        deskripsi.style.height = "12rem";
-        btnRead.innerHTML = "In Full";
-      }
-    }
-  });
 }
+
+document.addEventListener("click", (e) => {
+  if (btnRead.contains(e.target)) {
+    if (deskripsi.clientHeight <= 208) {
+      deskripsi.style.height = "auto";
+      btnRead.innerHTML = "Hide";
+      btnIcon.classList.remove("fa-chevron-down");
+      btnIcon.classList.add("fa-chevron-up");
+      btnRead.appendChild(btnIcon);
+    } else {
+      deskripsi.style.height = "12rem";
+      btnRead.innerHTML = "In Full";
+      btnIcon.classList.remove("fa-chevron-up");
+      btnIcon.classList.add("fa-chevron-down");
+      btnRead.appendChild(btnIcon);
+    }
+  }
+});
+
 const listArr = [...listSpesifikasi];
 let list = listArr.map((listArr) => listArr.textContent);
 list = list.slice(1);
@@ -62,17 +69,38 @@ document.addEventListener("DOMContentLoaded", () => {
 
   let i = 0;
 
-  totalContent.innerHTML = `1 / ${items.length}`;
-
   const itemWidth = items[0].offsetWidth;
 
-  prevBtn.addEventListener("click", () => {
+  function prev() {
     i = Math.max(i - 1, 0);
-    track.style.transform = `translateX(-${i * itemWidth}PX)`;
-  });
+    track.style.transform = `translateX(-${i * itemWidth}px)`;
+    track.style.transition = "0.8s";
+  }
 
-  nextBtn.addEventListener("click", () => {
+  function next() {
     i = Math.min(i + 1, items.length - 1);
     track.style.transform = `translateX(-${i * itemWidth}px)`;
+    track.style.transition = "0.8s";
+  }
+
+  function updateItem() {
+    const indexItem = i + 1;
+    totalContent.innerHTML = `${indexItem} / ${items.length}`;
+  }
+
+  document.addEventListener("click", (e) => {
+    if (nextBtn.contains(e.target)) {
+      next();
+      updateItem();
+    }
   });
+
+  document.addEventListener("click", (e) => {
+    if (prevBtn.contains(e.target)) {
+      prev();
+      updateItem();
+    }
+  });
+
+  updateItem();
 });
